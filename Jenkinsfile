@@ -6,8 +6,8 @@ pipeline {
             steps {
                 dir ('code') {
                     checkout([
-                    $class: 'GitSCM', branches: [[name: '*/development']], 
-                    userRemoteConfigs: [[url: 'https://github.com/mendix/docs.git']]
+                    $class: 'GitSCM', branches: [[name: '*/master']], 
+                    userRemoteConfigs: [[url: 'https://github.com/minamijoyo/myaws.git']]
                     ])
                 }
             }
