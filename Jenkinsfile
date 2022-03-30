@@ -1,5 +1,5 @@
 pipeline {
-    agent "jenkins-worker"
+    agent { label "jenkins-worker" }
 
     stages {
         stage('CloneRepo') {
